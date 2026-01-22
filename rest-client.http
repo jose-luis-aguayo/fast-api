@@ -1,0 +1,17 @@
+@hostname = 127.0.0.1
+@port = 8000
+@host = {{hostname}}:{{port}}
+
+POST http://{{host}}/items/
+Content-Type: application/json
+
+{
+    "namee": "Gaming Laptop",
+    "description": "High-end specs for developers"
+}
+
+###
+GET http://{{host}}/items/1
+
+
+
